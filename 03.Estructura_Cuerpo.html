@@ -1,0 +1,291 @@
+<!doctype html>
+
+<html>
+    <head>
+        <!--Se agrega los caracteres latinos-->
+        <meta charset="utf-8">
+        <!--Se agrega el autur de la pagina-->
+        <meta name="author" content="Felipe">
+        <!--Se agrega la descripcion del sitio-->
+        <meta name="description" content="Aqui se pone la descripcion del sitio">
+        <!--Se agregan las palabras claves-->
+        <!--Tambien se agrega el titulo a palabras clave-->
+        <meta name="keywords" content="html, desarrollo web">
+
+
+        <!--Se agrega el titulo de la pagina-->
+        <title>Estructura de la cabecera</title>
+
+        <!--Link puede agregar el icono a la pagina-->
+        <!--En el atributo de href se pone la direccion del png o imagen-->
+        <link rel="icon" href="img/Daco_4872780.png">
+
+    </head>
+
+    <body>
+
+        <!--Formularios-->
+
+        <center>
+            <h3>Formulario</h3>
+            <form>
+
+                <!--Label-->
+                <!--For va hacia el id del mismo nombre-->
+                <label for="texto" >Entrada de texto </label>
+                <!--Caja de texto-->
+                <input id="texto" type="text" placeholder="Entrada de texto" required> <!--value="Hola" readonly-->
+
+                <br>
+                <br>
+
+                <!--Para ingresar email-->
+                <!--For va hacia el id del mismo nombre-->
+                <label for="email" >Entrada de email </label>
+                <!--Caja de texto-->
+                <input id="email" type="email" placeholder="Entrada de email" required> <!--value="Hola" readonly-->
+
+                <br>
+                <br>
+
+                <!--Para ingresar contraseñas-->
+                <!--For va hacia el id del mismo nombre-->
+                <label for="contraseña" >Entrada de contraseña </label>
+                <!--Caja de texto-->
+                <input id="contraseña" type="password" placeholder="Entrada de contraseña" required> <!--value="Hola" readonly-->
+
+                <br>
+                <br>
+
+                <!--Para ingresar numeros-->
+                <input type="number" value="10" min="0" max="12">
+
+                <br>
+                <br>
+
+                <!--Selector de exponencia multiple-->
+
+                <select>
+                    <!--Opciones-->
+                    <option>Opcion 1</option>
+                    <option>Opcion 2</option>
+                    <option>Opcion 3</option>
+                </select>
+
+                <!--Checbox-->
+
+                <br>
+                <br>
+
+                <input type="checkbox" id="rojo"><label for="rojo">rojo</label>
+                <input type="checkbox" id="azul"><label for="azul">azul</label>
+                <input type="checkbox" id="amarillo"><label for="amarillo">amarillo</label>
+
+                <br>
+                <br>
+
+               <!--Input de tipo radio-->
+               <!--Para hacer que solo se pueda seleccionar 1 se usar el atributo name-->
+               <!--Atributo checked esta seleccionado por default-->
+               <input type="radio" id="blanco" name="radio"><label for="blanco">blanco</label> 
+               <input type="radio" id="negro" name="radio"><label for="negro">negro</label>
+
+               <!--Para enviar formulario-->
+               <!--Para limitar que informacion es necesario se utuliza el atributo "required"-->
+
+               <br>
+               <br>
+
+               <input type="submit" value="Enviar forumario">
+
+            </form>
+
+        </center>
+
+
+
+        <hr>
+
+        <!--En esta parte va todo lo que va en el cabezal de un sitio web-->
+        <header>Cabezal</header>
+
+        <!--Barra de navegacion-->
+        <nav>Barra de navegacion</nav>
+
+        <!--Seccion del sitio-->
+        <section>Seccion principal</section>
+
+        <!--Identificar columnas-->
+        <aside>columna</aside>
+
+        <!--Para escribir articulos-->
+        <article>Articulo</article>
+        
+        <!--Para escribir titulos-->
+        <!--Va del h1 hasta h6, dependiendo el tamaño de letra--> 
+        <h1>Titulo</h1>
+        <h2>Titulo</h2>
+        <h3>Titulo</h3>
+        <h4>Titulo</h4>
+        <h5>Titulo</h5>
+        <h6>Titulo</h6>
+
+        <!--Para escribir parrafos (textos)-->
+        <!--La etiqueta de nombre "b" resalta en ngeritas-->
+        <!--La etiqueta de nombre "br" genera un salto de linea-->
+        <p>Esto es un <b>parrafo</b>, <br> esto es otro parrafo </p>
+
+        <!--Etiqueta para hacer vinculos-->
+        <a href="#">Vinculo</a>
+        
+        <hr>
+
+        <!--Insertar imagenes-->
+        <img src="img/Daco_4872780.png" width="500" height="500">
+        
+       <!--Hacer un conjunto de listas numerica-->
+       
+       <ol>
+           <li>Carro</li>
+           <li>Barco</li>
+           <li>Avion</li>
+       </ol>
+
+       <!--Hacer un conjunto de listas no numerica-->
+       
+       <hr>
+
+       <ul>
+            <li>Carro</li>
+            <li>Barco</li>
+            <li>Avion</li>
+        </ul>
+
+        <!--Para crear tablas-->
+
+        <table border="">
+            <!--Filas-->
+            <tr>
+                <!--Columnas-->
+                <th>MES</th>
+                <th>AHORRO</th>
+            </tr>
+            <tr>
+                <!--Columnas-->
+                <th>Diciembre</th>
+                <th>1500</th>
+            </tr>
+        </table>
+
+        <!--Indicadores para valores numericos-->
+
+        <h1>Resultados del examen</h1>
+        <p>Carlos: <meter value="94" min="0" max="100" high="90"></meter></p>
+        <p>Andres: <meter value="80" min="0" max="100" high="90"></meter></p>
+        <p>Ana: <meter value="60" min="0" max="100" high="90"></meter></p>
+        <p>Pedro: <meter value="30" min="0" max="100" high="90"></meter></p>
+
+        <!--Pie de pagina-->
+        <footer>
+            Este es el pie de pagina
+        </footer>
+
+        <hr>
+
+        <!--Insertar imagenes-->
+        <!--Eqtiqueta auxiliar para imagenes, no quedan volando y se organizan en figure-->
+        <figure>
+            <img src="img/Daco_4872780.png" width="500" height="500">
+        </figure>
+        <!--Etiqueta para poner pie de pagina a una imagen-->
+        <figcaption>Figura 1</figcaption>
+
+        <!--Tambien las tablas pueden llevar cabezal y cuerpo, como los programas en si-->
+        
+        <table border="">
+
+            <!--Titulos de la tabla-->
+            <thead>
+                <tr>
+                    <!--Columnas-->
+                    <th>MES</th>
+                    <th>AHORRO</th>
+                </tr>
+
+            </thead>
+
+            <!--Cuerpo de la tabla-->
+            <tbody>
+                <tr>
+                    <!--Columnas se escriben con td si se divide en cuerpo y cabeza-->
+                    <td>Diciembre</td>
+                    <td>1500</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+
+        <hr>
+
+        <!--Eqtiqueta meter y progress-->
+        <h2>Resultado de ventas</h2>
+        <p>Carlos: <progress value="80" min="0" max="100"></progress></p>
+        <p>Andres: <progress value="70" min="0" max="100"></progress></p>
+        <p>Ana: <progress value="50" min="0" max="100"></progress></p>
+        <p>Pedro: <progress value="30" min="0" max="100"></progress></p>
+
+        <hr>
+
+        <!--Etiqueta de audio-->
+        <!--autoplay = la cancion se reproduce sola-->
+        <!--conntrols = se agregan controles para el audio-->
+        <!--loop = el sonido se repite al terminar-->
+        <!--preload-->
+        <!--preload = auto (accion por defecto que tiene el atributo)-->
+        <!--preload = metadata (hace la precarga cuando se presione play)-->
+        <!--preload = none (No hagas la precarga del archivo, solo se carga cuando se utiliza el audio)-->
+        <!--Formatos: OGG VORBIS(PCO PESO, BUENA CALIDAD, REDUCE ANCHO DE BANDA), MP3(.mp3), WAV(.wav), ACC(.m4a, .m4b, .mp4, .acc) -->
+        <!--Una buena practica es poner como minimo los 3 formatos mas usados (.mp3, .m4a, .ogg)-->
+        <!--El navegador por defecto va a leer el que pueda-->
+        <audio controls preload="auto">
+            <!--Source se agrega la direccion de la cancion o audio-->
+            <source src="" type="audio/mp3">
+        </audio>
+
+        <!--Etiqueta de video-->
+        <!--Atributos similares a los de audio-->
+        <!--Formatos = ATHEORA OGG(.ogg), MP4(.mp4), WEBM(.webm)(Lo leen todos los navegadores)-->
+        <!--Una buena practica es poner como minimo los 3 formatos mas usados (.mp4, .webm, .ogg)-->
+        <video controls loop width="20%" height="200">
+            <source src="" type="video/mp4">
+        </video>
+
+
+        <!--Etiqueta IFRAME-->
+        <!--Permite insertar un docmuento, video, mapa, reproductor de sonido en linea-->
+
+        <!--Insertando un video de yotube-->
+        <!--Investigar para otras fuentes-->
+        <!--Muchas fuentes utilizan iframe y te dan el codigo en html--> 
+        <iframe width="500" height="200" src="https://youtube.com/embed/iTm_growQfw" frameborder="10" allowfullscreen></iframe>
+
+        <!--Etiqueta estandar DIV-->
+        <!--Comenzar ID con minuscula-->
+        <header>
+            <div id="logotipo">Logotipo</div>
+            Cabezal
+        </header>
+        
+        <!--Identificar columnas-->
+        <!--Tambien los div se pueden clasificar-->
+        <aside>
+            <div class="noticias">Noticia 1</div>
+            <div class="noticias">Noticia 2</div>
+            <div class="noticias">Noticia 3</div>
+        </aside>
+
+
+    </body>
+
+</html>

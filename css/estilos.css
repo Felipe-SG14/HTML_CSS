@@ -1,0 +1,288 @@
+/*Para el selector universal, para todos los objetos*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    /*Fondo por default*/
+    /*No se recomienda poner tipografias diferentes*/
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#chat{
+    /*Valor de fixed permite pegar el objeto a la pantalla*/
+    position: fixed;
+    width: 250px;
+    height: 40px;
+    bottom: 0px;
+    right: 20px;
+    background: magenta;
+    /*Manipular el indice de profundidad de las cajas*/
+    z-index: 1;
+    /*Levar una caja para atras es con*/
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+/*Para el cabezal o cabezote */
+header{
+    /*Cajas principales es relativa*/
+    position: relative;
+    /*margin: top left*/
+    /*margin automatico centra por default*/
+    /*margin: top right bottom left*/
+    margin: 20px auto;
+    width: 1000px;
+    height: 120px;
+}
+
+
+/*Para el estilo de lo que dentro del header*/
+
+#logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 200px;
+    height: 60px;
+    /*Fuente*/
+    font-family: 'Rouge Script', cursive;
+    font-size: 60px;
+    text-align: center;
+    /*Line height lo pone a la mitad de altura del argumento*/
+    line-height: 60px;
+}
+
+.redes{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background: rgb(201, 197, 197);
+    /*Fuente*/
+    text-align: center;
+    line-height: 42px;
+    color: white;
+}
+
+#icono1{
+    top: 42px;
+    right: 120px;
+    background: red;
+}
+
+#icono2{
+    top: 42px;
+    right: 71px;
+    background: blue;
+}
+
+#icono3{
+    top: 42px;
+    right: 19px;
+    background: green;
+}
+
+
+/*Para el estilo de la barra de navegacion*/
+nav{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 48px;
+}
+
+/*Para los botones en la barra de navegacion*/
+/*Seleccion atraves de clase*/
+.botones{
+    float: left;
+    width: 196px;
+    height: 48px;
+    background: rgb(179, 174, 174);
+    margin: 0px 2px;
+    /*Fuente*/
+    text-align: center;
+    line-height: 48px;
+    border-radius: 10px;
+    color: white;
+}
+
+/*Para botones*/
+/*pseudo clase hover*/
+/*Hover cuando el mouse esta en el buton*/
+
+a .botones:hover{
+    background: rgb(179, 174, 174, 0.8);
+}
+
+a .botones:active{
+    background: brown;
+}
+
+/*Para el estilo del top*/
+#top{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 192px;
+}
+
+/*Seleccion atravez de ruta 
+Se llama al top, ul, y al il            
+*/
+
+/*Se modifica la lista*/
+#top ul{
+    width:1010px;
+    height:192px;
+}
+
+/*Se modifican los estilo de los elementos de la lista*/
+#top ul li{
+    float:left;
+    width:326px;
+    height:192px;
+    margin-right:10px;
+    /*Se alinea todo*/
+    text-align: center;
+}
+/*Referenciando solo a imganes*/
+#top ul li img{
+    margin-top: 10px ;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+#top ul li h1{
+    font-family: 'Rouge Script', cursive;
+}
+
+#top ul li p{
+    font-size: 15px;
+}
+
+/*Para el estilo de la seccion*/
+section{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 453px;
+}
+
+/*Modificar las columnas y el arituclo en section*/
+/*Para llamar a una eqtiqueta*/
+
+aside#izq{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 453px;
+}
+
+aside#izq ul li{
+    background: red;
+    padding: 10px;
+    margin: 2px 10px;
+    /*La posicion del codigo si importa*/
+    list-style: square;
+    list-style-position: inside;
+    /*La lista toma la imagen como separador*/
+    list-style-image: url(img/lista.png) ;
+}
+
+aside#izq ul li a{
+    text-decoration: none;
+}
+
+aside#izq ul li a:hover{
+    color: blue;
+}
+
+aside#der{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 453px;
+}
+
+/*Para el formulario*/
+
+aside#der h1{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: blue;
+    color: white;
+    margin-bottom: 5px;
+}
+
+aside#der form input{
+    padding: 10px;
+    margin: 5px 0px;
+    width: 176px;
+    border-radius: 10px;
+}
+
+/*Llamando desde el atributo de una eqtiqueta*/
+aside#der form input[type="text"]{
+    background: url(img/usuario.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+aside#der form input[type="password"]{
+    background: url(img/password.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+aside#der form input[type="submit"]{
+    width: 200px;
+    background: blue;
+}
+
+section article{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: 600px;
+    height: 453px;
+}
+
+section article h1{
+    font-size: 30px;
+    margin: 20px;
+}
+
+section article p{
+    margin: 5px 20px;
+    text-align:justify
+}
+
+section article p img{
+    float: left;
+    margin-right: 15px;
+}
+
+
+/*Para el estilo del pie de pagina*/
+
+footer{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 70px;
+    background: rgb(153, 150, 150);
+    text-align: center;
+    line-height: 70px;
+}
